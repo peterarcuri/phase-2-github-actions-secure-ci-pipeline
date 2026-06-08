@@ -1,0 +1,29 @@
+project:
+  name: phase-2-github-actions-secure-ci-pipeline
+  environment: development
+
+testing:
+  framework: pytest
+  minimum_pass_rate: 100
+
+linting:
+  tool: ruff
+  fail_on_errors: true
+
+security:
+  sast:
+    tool: bandit
+    fail_on_high: true
+    fail_on_medium: false
+
+  dependency_scanning:
+    tool: pip-audit
+    fail_on_vulnerabilities: true
+
+ci_pipeline:
+  require_tests: true
+  require_linting: true
+  require_security_scan: true
+
+reporting:
+  output_directory: sample-output
