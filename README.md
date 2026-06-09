@@ -239,49 +239,58 @@ This ensures consistent validation across all development activities.
 
 ## Project Structure
 
-Shows the completed project layout and file organization.
+Shows the overall repository layout including application code, GitHub Actions workflow, tests, documentation, and security configuration.
 
-![Project Structure](screenshots/project-structure.png)
-
----
-
-## Successful Test Execution
-
-Demonstrates successful Pytest execution.
-
-![Pytest Results](screenshots/pytest-success.png)
+![Project Structure](screenshots/project-structure-ci-pipeline.png)
 
 ---
 
-## Ruff Linting
+## GitHub Actions Workflow Configuration
 
-Shows code quality validation using Ruff.
+Displays the GitHub Actions workflow responsible for executing automated testing, linting, and security scans.
 
-![Ruff Scan](screenshots/ruff-success.png)
+![Workflow YAML](screenshots/workflow-yaml-ci-pipeline.png)
+
+---
+
+## Successful Pytest Execution
+
+Demonstrates successful execution of the automated unit test suite.
+
+![Pytest Success](screenshots/pytest-success-ci-pipeline.png)
+
+---
+
+## Ruff Code Quality Validation
+
+Shows the Ruff linter validating code quality and style standards.
+
+![Ruff Success](screenshots/ruff-success-ci-pipeline.png)
 
 ---
 
 ## Bandit Security Scan
 
-Demonstrates static application security testing.
+Demonstrates Static Application Security Testing (SAST) using Bandit to identify insecure coding patterns and common Python security issues.
 
-![Bandit Scan](screenshots/bandit-scan.png)
+![Bandit Security Scan](screenshots/bandit-scan-ci-pipeline.png)
 
 ---
 
 ## Dependency Vulnerability Scan
 
-Shows pip-audit dependency analysis results.
+Shows dependency auditing with pip-audit to detect vulnerable third-party packages and software supply chain risks.
 
-![pip-audit Scan](screenshots/pip-audit-scan.png)
+![pip-audit Scan](screenshots/pip-audit-scan-ci-pipeline.png)
 
 ---
 
-## GitHub Actions Workflow
+## Successful GitHub Actions Pipeline
 
-Demonstrates a successful CI pipeline execution.
+Demonstrates a successful end-to-end CI pipeline execution with all quality and security gates passing.
 
-![GitHub Actions](screenshots/github-actions-success.png)
+![GitHub Actions Success](screenshots/github-actions-success-ci-pipeline.png)
+
 
 ---
 
